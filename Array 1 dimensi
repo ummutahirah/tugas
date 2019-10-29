@@ -1,0 +1,23 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    int gula[5];
+    int hasil=0;
+    for(int i=0; i<5; i++)
+        {
+            cout << "Input Toples ke-" << (i + 1 ) << ":";
+            cin >> gula[i];
+        }
+     cout << "Nilai Gula yang Anda masukkan ..." << endl;
+     for(int i=0; i<5; i++)
+        {
+            hasil+= gula[i];
+            cout << "\nToples ke-" << (i + 1) << " adalah " << gula[i] << " kg";
+        }
+     cout << "\nTotal Gula setiap Toples ..." << endl << endl;
+     cout << hasil << " kg";
+    return 0;
+}
